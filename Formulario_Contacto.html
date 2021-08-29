@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Formulario de Contacto
+ Fecha realizado: 28-03-2021
+Autor: Rubén Gámez Torrijos
+Web personal: www.rubengameztorrijos.com
+URI:https://github.com/rugator/Ejercicio3-->
+
+
+<!-- Aquí abajo inicia el documento en html en idioma español -->
+<html lang="es">
+<!-- Header son etiquetas de html que se usan para definir la cabecera o título de una página html -->
+<head>
+<!-- El meta charset "UTF-8" indica la codificación de caracteres utilizada en el códgio html -->
+	<meta charset="UTF-8">
+<!-- Aquí abajo muestra el título que aparece en el título de la página o pestaña -->
+	<title>Ejercicio 3</title>
+<!-- Aquí muestra los estilos para agregar a un elemento, color, fuente tamaño, etc -->
+	<style = css>
+		
+    h1 {text-align: left; background-color: #00aeef; color: #fff; padding: 10px; margin: 0px;}
+    body {line-height=100%; font-family: Tahoma; size: 11; background-color: #fff;}
+    button {border: 0px; margin: auto; color: #fff; text-align: left; padding: 15px; margin: 5px; background-color: #00aeef;}
+    footer {margin: 50px;}
+	</style>
+</head>
+
+<!-- Aquí en elemento "body" alberga el contenido de la página web, es decir aquello que queremos que aparezca en el área de navegación. -->
+<body>
+<!-- En "title aparecerá el nombre del título y la pestaña" -->
+		<h1 title="Formulario de contacto">Formulario de contacto</h1>
+	   	
+	   	<p><fieldset>
+      <!-- "legend" aparece una linea en recuadro alrededor -->
+	   		<legend>Contacto</legend>
+      <!-- "form" campos para agregar al formulario e introducir datos en los campos y sus tipos definidos según el type, form e id. -->
+
+			<form>
+      <p><label for="fname">Nombre:</label>
+			      <input type="text" id="fname" name="fname"><br>
+      <p><label for="pwd">
+		        <span class="label">Contraseña:</span>
+            <strong><abbr title="Requerido"></abbr></strong>
+            <input id="pwd" minlenght="4" maxlenght="12" name="contraseña" type="password"/><br> 
+		  </label>
+      <label for="telefono"><br>
+		   			<span class="label">Teléfono:</span>
+		    		<input id="telefono" maxlenght="9" name="telefono" type="tel"/> 
+		  </label>
+      <label for="date">
+          <p><span class="label">Fecha:</span>
+	      	<input type="date">
+		  </label>
+		  <label form="message"><br>
+		    	<p><spam class="label">Mensaje:</spam><br>
+          <textarea name="message" style="width:300px; height:150px;">Mensaje de texto...</textarea>
+      </label>
+		    <p><spam class="label"><strong><abbr title="Requerido"></abbr></strong></spam>
+        <input type="checkbox" id="terms-privacy" name="términos y condiciones" value="términos y condiciones">
+        <label for="terms-privacy"> Acepto los términos y condiciones</label><br>
+<!-- "onclick" es un mensaje de alerta emergente que me parecía curioso añadir para informar al usuario de que el mensaje ha sido enviado. -->
+
+        <p><button type="submit" value="Submit" onclick="alert('¡Mensaje enviado!')">Enviar</button>
+        <button type="reset" value="Reset" onclick="alert('¡Borrado con éxito!')">Borrar</button>
+        
+    
+	  </fieldset> 		
+
+	</body>
+  
+<!-- "footer" define el pie de página en este caso los créditos y autor -->
+  <footer>
+    <left>Copyright © 2021-03-28 | Developed by Rubén Gámez Torrijos</left>
+  </footer>
+</html>
